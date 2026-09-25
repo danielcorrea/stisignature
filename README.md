@@ -269,4 +269,4 @@ La signature sera automatiquement ajoutée à la fin des **Suivis** et **Solutio
 
 ## 📄 License
 
-This project is licensed under the **GPLv2+** license.
+This project is licensed under the **GPLv3** license.
