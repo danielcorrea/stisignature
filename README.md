@@ -3,7 +3,7 @@
 Plugin para **GLPI 11** que permite aos técnicos configurar assinaturas personalizadas e adicioná-las automaticamente aos **Acompanhamentos ITIL** e **Soluções de Chamados**.
 
 🌎 **Languages:**
-🇧🇷 [Português](#-português-brasil) · 🇬🇧 [English](#-english) · 🇪🇸 [Español](#-español) · 🇫🇷 [Français)
+🇧🇷 [Português](#-português-brasil) · 🇬🇧 [English](#-english) · 🇪🇸 [Español](#-español) · 🇫🇷 [Français](#-français)
 
 ---
 
