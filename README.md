@@ -1,132 +1,272 @@
-GLPI STI Signature
-🌎 English | 🇪🇸 Español | 🇫🇷 Français
+# GLPI STI Signature
 
- 🇬🇧 English
-Overview
-STI Signature is a lightweight, secure, and fully integrated plugin for GLPI 11. It allows technicians and support staff to configure personalized, automatic signatures that are seamlessly appended to their ITIL Follow-ups and Ticket Solutions.
+Plugin para **GLPI 11** que permite aos técnicos configurar assinaturas personalizadas e adicioná-las automaticamente aos **Acompanhamentos ITIL** e **Soluções de Chamados**.
 
-Features
-Per-User Configuration: Each technician manages their own signature via a new tab in their GLPI "My Settings" profile.
+🌎 **Languages:**
+🇧🇷 [Português](#-português-brasil) · 🇬🇧 [English](#-english) · 🇪🇸 [Español](#-español) · 🇫🇷 [Français)
 
-Rich Text Support: Fully integrated with GLPI's native TinyMCE editor, allowing HTML formatting, bold text, colors, and images.
+---
 
-GLPI 11 Ready: Built specifically for the new strict architecture of GLPI 11 and PHP 8.4. It utilizes the native Migration orchestrator for database creation and modern pre_item_add hooks for secure text injection, completely bypassing deprecated raw queries.
+## 🇧🇷 Português (Brasil)
 
-Toggle On/Off: Users can easily activate or deactivate their automatic signature without deleting the text.
+### Visão Geral
 
-Requirements
-GLPI >= 11.0.0
+O **STI Signature** é um plugin leve, seguro e totalmente integrado ao **GLPI 11**.
 
-PHP >= 8.4
+Ele permite que técnicos e equipes de suporte configurem assinaturas automáticas e personalizadas, que são adicionadas automaticamente aos seus **Acompanhamentos ITIL** e **Soluções de Chamados**.
 
-Installation
-Download the latest release.
+### ✨ Características
 
-Extract the folder and rename it exactly to stisignature.
+* **Configuração por usuário**
+  Cada técnico gerencia sua própria assinatura através de uma nova aba em **Minhas configurações** no GLPI.
 
-Move the folder to your GLPI plugins directory: glpi/plugins/stisignature.
+* **Editor de texto rico**
+  Integração com o editor nativo **TinyMCE** do GLPI, permitindo formatação HTML, negrito, cores, imagens e outros recursos de texto rico.
 
-Log into GLPI as a Super-Admin.
+* **Compatível com GLPI 11**
+  Desenvolvido especificamente para a arquitetura do GLPI 11 e **PHP 8.4**.
 
-Navigate to Setup > Plugins.
+* **Integração com a arquitetura nativa do GLPI**
+  Utiliza o orquestrador nativo `Migration` para criação e atualização do banco de dados e o hook `pre_item_add` para a inserção segura das assinaturas.
 
-Click Install and then Enable.
+* **Ativar / Desativar**
+  O usuário pode ativar ou desativar sua assinatura sem perder o conteúdo previamente configurado.
 
-Usage
-Click on your profile icon in the top right corner and select My Settings.
+### 📋 Requisitos
 
-Navigate to the new tab My Signature (Tickets).
+| Componente | Requisito   |
+| ---------- | ----------- |
+| GLPI       | `>= 11.0.0` |
+| PHP        | `>= 8.4`    |
 
-Select "Yes" to activate the signature.
+### 📦 Instalação
 
-Type and format your signature in the rich text editor.
+1. Baixe a versão mais recente em **Releases**.
+2. Extraia o arquivo do plugin.
+3. Renomeie a pasta para exatamente:
 
-Click Save. Your signature will now automatically appear at the bottom of your follow-ups and solutions.
+   ```text
+   stisignature
+   ```
+4. Mova a pasta para o diretório de plugins do GLPI:
 
- 🇪🇸 Español
-Descripción General
-STI Signature es un plugin ligero, seguro y totalmente integrado para GLPI 11. Permite a los técnicos y al personal de soporte configurar firmas automáticas y personalizadas que se añaden de forma invisible a sus Seguimientos ITIL y Soluciones de Tickets.
+   ```text
+   glpi/plugins/stisignature
+   ```
+5. Acesse o GLPI com uma conta **Super-Admin**.
+6. Acesse:
+   **Configurar → Plugins**
+7. Clique em **Instalar** e, em seguida, em **Ativar**.
 
-Características
-Configuración por Usuario: Cada técnico gestiona su propia firma a través de una nueva pestaña en su perfil de "Mis Ajustes" en GLPI.
+### 📝 Uso
 
-Soporte de Texto Enriquecido: Totalmente integrado con el editor nativo TinyMCE de GLPI, permitiendo formato HTML, texto en negrita, colores e imágenes.
+1. Clique no ícone do seu perfil no canto superior direito.
+2. Selecione **Minhas configurações**.
+3. Acesse a aba **Minha Assinatura (Chamados)**.
+4. Selecione **Sim** para ativar a assinatura.
+5. Digite e formate sua assinatura utilizando o editor de texto rico.
+6. Clique em **Salvar**.
 
-Preparado para GLPI 11: Construido específicamente para la nueva arquitectura estricta de GLPI 11 y PHP 8.4. Utiliza el orquestador nativo Migration para la creación de bases de datos y el moderno gancho pre_item_add para inyección segura de texto.
+A assinatura será adicionada automaticamente ao final dos **Acompanhamentos** e **Soluções** criados pelo usuário.
 
-Activar/Desactivar: Los usuarios pueden activar o desactivar fácilmente su firma automática sin perder el texto guardado.
+---
 
-Requisitos
-GLPI >= 11.0.0
+## 🇬🇧 English
 
-PHP >= 8.4
+### Overview
 
-Instalación
-Descargue la última versión.
+**STI Signature** is a lightweight, secure, and fully integrated plugin for **GLPI 11**.
 
-Extraiga la carpeta y renómbrela exactamente a stisignature.
+It allows technicians and support staff to configure personalized automatic signatures that are automatically appended to their **ITIL Follow-ups** and **Ticket Solutions**.
 
-Mueva la carpeta a su directorio de plugins de GLPI: glpi/plugins/stisignature.
+### ✨ Features
 
-Inicie sesión en GLPI como Super-Admin.
+* **Per-user configuration**
+  Each technician manages their own signature through a new tab in GLPI's **My Settings**.
 
-Navegue a Configuración > Plugins.
+* **Rich text editor**
+  Fully integrated with GLPI's native **TinyMCE** editor, supporting HTML formatting, bold text, colors, images, and other rich-text features.
 
-Haga clic en Instalar y luego en Activar.
+* **GLPI 11 ready**
+  Specifically developed for the GLPI 11 architecture and **PHP 8.4**.
 
-Uso
-Haga clic en el icono de su perfil en la esquina superior derecha y seleccione Mis Ajustes.
+* **Native GLPI architecture**
+  Uses the native `Migration` orchestrator for database creation and updates, and the `pre_item_add` hook for secure signature injection.
 
-Vaya a la nueva pestaña Mi Firma (Casos).
+* **Enable / Disable**
+  Users can enable or disable their automatic signature without losing the saved content.
 
-Seleccione "Sí" para activar la firma.
+### 📋 Requirements
 
-Escriba y formatee su firma en el editor de texto enriquecido.
+| Component | Requirement |
+| --------- | ----------- |
+| GLPI      | `>= 11.0.0` |
+| PHP       | `>= 8.4`    |
 
-Haga clic en Guardar. Su firma aparecerá ahora automáticamente al final de sus seguimientos y soluciones.
+### 📦 Installation
 
- 🇫🇷 Français
-Aperçu
-STI Signature est un plugin léger, sécurisé et entièrement intégré pour GLPI 11. Il permet aux techniciens et au personnel d'assistance de configurer des signatures automatiques personnalisées qui sont ajoutées de manière transparente à leurs Suivis ITIL et Solutions de Tickets.
+1. Download the latest version from **Releases**.
+2. Extract the plugin archive.
+3. Rename the folder exactly to:
 
-Fonctionnalités
-Configuration par Utilisateur : Chaque technicien gère sa propre signature via un nouvel onglet dans son profil "Mes Préférences" de GLPI.
+   ```text
+   stisignature
+   ```
+4. Move the folder to your GLPI plugins directory:
 
-Support du Texte Enrichi : Entièrement intégré à l'éditeur TinyMCE natif de GLPI, permettant le formatage HTML, le texte en gras, les couleurs et les images.
+   ```text
+   glpi/plugins/stisignature
+   ```
+5. Log in to GLPI as a **Super-Admin**.
+6. Go to:
+   **Setup → Plugins**
+7. Click **Install**, then **Enable**.
 
-Prêt pour GLPI 11 : Conçu spécifiquement pour la nouvelle architecture stricte de GLPI 11 et PHP 8.4. Il utilise l'orchestrateur natif Migration pour la création de la base de données et le hook moderne pre_item_add pour une injection de texte sécurisée.
+### 📝 Usage
 
-Activer/Désactiver : Les utilisateurs peuvent facilement activer ou désactiver leur signature automatique sans supprimer le texte.
+1. Click your profile icon in the top-right corner.
+2. Select **My Settings**.
+3. Open the **My Signature (Tickets)** tab.
+4. Select **Yes** to enable the signature.
+5. Enter and format your signature using the rich text editor.
+6. Click **Save**.
 
-Prérequis
-GLPI >= 11.0.0
+The signature will automatically be appended to the user's **Follow-ups** and **Solutions**.
 
-PHP >= 8.4
+---
 
-Installation
-Téléchargez la dernière version.
+## 🇪🇸 Español
 
-Extrayez le dossier et renommez-le exactement en stisignature.
+### Descripción General
 
-Déplacez le dossier dans votre répertoire de plugins GLPI : glpi/plugins/stisignature.
+**STI Signature** es un plugin ligero, seguro y totalmente integrado con **GLPI 11**.
 
-Connectez-vous à GLPI en tant que Super-Admin.
+Permite a los técnicos y al personal de soporte configurar firmas automáticas y personalizadas que se añaden automáticamente a sus **Seguimientos ITIL** y **Soluciones de Tickets**.
 
-Naviguez vers Configuration > Plugins.
+### ✨ Características
 
-Cliquez sur Installer puis sur Activer.
+* **Configuración por usuario**
+  Cada técnico gestiona su propia firma desde una nueva pestaña en **Mis Ajustes** de GLPI.
 
-Utilisation
-Cliquez sur l'icône de votre profil dans le coin supérieur droit et sélectionnez Mes Préférences.
+* **Editor de texto enriquecido**
+  Integración completa con el editor nativo **TinyMCE** de GLPI, con soporte para formato HTML, negrita, colores, imágenes y otros recursos de texto enriquecido.
 
-Naviguez vers le nouvel onglet Ma Signature (Tickets).
+* **Preparado para GLPI 11**
+  Desarrollado específicamente para la arquitectura de GLPI 11 y **PHP 8.4**.
 
-Sélectionnez "Oui" pour activer la signature.
+* **Arquitectura nativa de GLPI**
+  Utiliza el orquestador nativo `Migration` para la creación y actualización de la base de datos y el hook `pre_item_add` para la inserción segura de las firmas.
 
-Tapez et formatez votre signature dans l'éditeur de texte enrichi.
+* **Activar / Desactivar**
+  Los usuarios pueden activar o desactivar su firma automática sin perder el contenido guardado.
 
-Cliquez sur Sauvegarder. Votre signature apparaîtra désormais automatiquement au bas de vos suivis et solutions.
+### 📋 Requisitos
 
-Author: Daniel Correa
-License: GPLv2+
+| Componente | Requisito   |
+| ---------- | ----------- |
+| GLPI       | `>= 11.0.0` |
+| PHP        | `>= 8.4`    |
 
+### 📦 Instalación
+
+1. Descargue la última versión desde **Releases**.
+2. Extraiga el archivo del plugin.
+3. Renombre la carpeta exactamente como:
+
+   ```text
+   stisignature
+   ```
+4. Mueva la carpeta al directorio de plugins de GLPI:
+
+   ```text
+   glpi/plugins/stisignature
+   ```
+5. Inicie sesión en GLPI como **Super-Admin**.
+6. Acceda a:
+   **Configuración → Plugins**
+7. Haga clic en **Instalar** y luego en **Activar**.
+
+### 📝 Uso
+
+1. Haga clic en el icono de su perfil en la esquina superior derecha.
+2. Seleccione **Mis Ajustes**.
+3. Acceda a la pestaña **Mi Firma (Casos)**.
+4. Seleccione **Sí** para activar la firma.
+5. Escriba y formatee su firma utilizando el editor de texto enriquecido.
+6. Haga clic en **Guardar**.
+
+La firma se añadirá automáticamente al final de los **Seguimientos** y **Soluciones** creados por el usuario.
+
+---
+
+## 🇫🇷 Français
+
+### Aperçu
+
+**STI Signature** est un plugin léger, sécurisé et entièrement intégré à **GLPI 11**.
+
+Il permet aux techniciens et au personnel d'assistance de configurer des signatures automatiques et personnalisées qui sont ajoutées automatiquement à leurs **Suivis ITIL** et **Solutions de Tickets**.
+
+### ✨ Fonctionnalités
+
+* **Configuration par utilisateur**
+  Chaque technicien gère sa propre signature depuis un nouvel onglet dans **Mes Préférences** de GLPI.
+
+* **Éditeur de texte enrichi**
+  Intégration complète avec l'éditeur natif **TinyMCE** de GLPI, avec prise en charge du formatage HTML, du texte en gras, des couleurs, des images et d'autres fonctionnalités de texte enrichi.
+
+* **Compatible avec GLPI 11**
+  Développé spécifiquement pour l'architecture de GLPI 11 et **PHP 8.4**.
+
+* **Architecture native de GLPI**
+  Utilise l'orchestrateur natif `Migration` pour la création et la mise à jour de la base de données ainsi que le hook `pre_item_add` pour l'injection sécurisée des signatures.
+
+* **Activer / Désactiver**
+  Les utilisateurs peuvent facilement activer ou désactiver leur signature automatique sans supprimer le contenu enregistré.
+
+### 📋 Prérequis
+
+| Composant | Prérequis   |
+| --------- | ----------- |
+| GLPI      | `>= 11.0.0` |
+| PHP       | `>= 8.4`    |
+
+### 📦 Installation
+
+1. Téléchargez la dernière version depuis **Releases**.
+2. Extrayez l'archive du plugin.
+3. Renommez le dossier exactement comme suit :
+
+   ```text
+   stisignature
+   ```
+4. Déplacez le dossier dans le répertoire des plugins de GLPI :
+
+   ```text
+   glpi/plugins/stisignature
+   ```
+5. Connectez-vous à GLPI avec un compte **Super-Admin**.
+6. Accédez à :
+   **Configuration → Plugins**
+7. Cliquez sur **Installer**, puis sur **Activer**.
+
+### 📝 Utilisation
+
+1. Cliquez sur l'icône de votre profil dans le coin supérieur droit.
+2. Sélectionnez **Mes Préférences**.
+3. Accédez à l'onglet **Ma Signature (Tickets)**.
+4. Sélectionnez **Oui** pour activer la signature.
+5. Saisissez et formatez votre signature avec l'éditeur de texte enrichi.
+6. Cliquez sur **Sauvegarder**.
+
+La signature sera automatiquement ajoutée à la fin des **Suivis** et **Solutions** créés par l'utilisateur.
+
+---
+
+## 👤 Author
+
+**Daniel Correa**
+
+## 📄 License
+
+This project is licensed under the **GPLv2+** license.
